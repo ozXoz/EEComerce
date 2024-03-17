@@ -1,0 +1,116 @@
+/* AdminDashboard.css */
+
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Arial", sans-serif;
+  background-color: #121212; /* Dark background for the whole admin area */
+  color: white;
+}
+
+/* Sidebar styles */
+.sidebar {
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #333; /* Dark shade for the sidebar */
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidebar a {
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ddd;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #fff;
+  background-color: #575757;
+}
+
+/* Main content styles */
+.main-content {
+  margin-left: 250px; /* Space for the sidebar */
+  padding: 20px;
+}
+
+/* Table styles for user list */
+.table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  text-align: left;
+  padding: 12px;
+  border: 1px solid #444;
+}
+
+table th {
+  background-color: #555;
+}
+
+table tr:nth-child(even) {
+  background-color: #262626;
+}
+
+table tr:hover {
+  background-color: #333;
+}
+
+/* Styles for buttons */
+button {
+  padding: 8px 16px;
+  margin: 4px;
+  background-color: #ff5722; /* Accent color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e64a19; /* Darker shade for hover state */
+}
+
+/* Responsive layout adjustments */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 100px; /* Adjust the sidebar width for mobile devices */
+  }
+
+  .sidebar a {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .main-content {
+    margin-left: 100px; /* Adjust the main content margin for mobile devices */
+  }
+
+  table {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* Add any additional styles you might need below */
